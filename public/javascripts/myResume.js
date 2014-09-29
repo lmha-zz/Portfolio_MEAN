@@ -1,0 +1,1 @@
+var myResume = angular.module('myResume', ['ngRoute']);
