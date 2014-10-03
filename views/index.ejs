@@ -15,12 +15,20 @@
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-default navbar-fixed-top text-center" role="navigation">
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
-				<div class="collapse navbar-collapse">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ng-bind="title"></a>
+				</div>
+				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-left">
 						<li id="resume_tab"><a href="#/">Resume</a></li>
-						<li><a> | </a></li>
 						<li id="projects_tab"><a href="#/projects">Projects</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -28,9 +36,11 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
 		<div class="row">
-			<div ng-view=""></div>
+			<div class="col-sm-12">
+				<div ng-view=""></div>
+			</div>
 		</div>
 		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myContactLabel" aria-hidden="true">
 			<div class="modal-dialog">

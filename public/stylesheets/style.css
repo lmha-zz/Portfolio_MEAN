@@ -3,4 +3,16 @@ body {
 }
 .navbar-nav.navbar-right:last-child {
 	margin-right:0 !important;
+}/*
+.city {
+	text-align: right;
+}*/
+.section_header {
+	border-bottom:1px solid black;
+}
+.section_header p {
+	margin-bottom: 2px !important;
+}
+p {
+	margin-bottom: 3px !important;
 }

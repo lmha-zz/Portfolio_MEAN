@@ -2,12 +2,12 @@ myResume.config(function($routeProvider) {
 	$routeProvider
 	.when('/',
 	{
-		title: "Lisa May Ha | Resume",
+		title: "Lisa May Ha",
 		templateUrl: '/partials/resume.html',
 	})
 	.when('/projects',
 	{
-		title: "Projects",
+		title: "Portfolio",
 		templateUrl: '/partials/projects.html'
 	})
 	$routeProvider.otherwise({'redirectTo': "/"});
